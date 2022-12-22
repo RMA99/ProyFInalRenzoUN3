@@ -21,25 +21,23 @@ public class frmMainCliente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frm_main_cliente);
-        txtBien=findViewById(R.id.txtBienvenida);
+        txtBien = findViewById(R.id.txtBienvenida);
         recibirDatos();
 
 
     }
 
-    public  void prueba(View v)
-    {
-        Intent i = new Intent(this,frmOperPedidoIni.class);
+    public void prueba(View v) {
+        Intent i = new Intent(this, frmOperPedidoIni.class);
         startActivity(i);
-        Toast.makeText(this, "Esto:"+user+"!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Maestro :" + user + "!", Toast.LENGTH_SHORT).show();
     }
 
-    public  void recibirDatos()
-    {
+    public void recibirDatos() {
         Bundle extras = getIntent().getExtras();
         String datoUsuario = extras.getString("datoUsuario");
-        txtBien.setText("Bienvenido "+datoUsuario);
-        this.user=datoUsuario;
+        txtBien.setText("Bienvenido " + datoUsuario);
+        this.user = datoUsuario;
     }
 
 }
