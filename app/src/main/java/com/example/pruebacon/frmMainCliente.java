@@ -30,7 +30,7 @@ public class frmMainCliente extends AppCompatActivity {
     public void prueba(View v) {
         Intent i = new Intent(this, frmOperPedidoIni.class);
         startActivity(i);
-        Toast.makeText(this, "Maestro :" + user + "!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Maestro :" + user + "!!", Toast.LENGTH_SHORT).show();
     }
 
     public void recibirDatos() {
