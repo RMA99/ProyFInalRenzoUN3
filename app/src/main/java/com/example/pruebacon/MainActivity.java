@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (rs.next()) {
 
-                Toast.makeText(getApplicationContext(), "Conexion establecida Jack" + rs.getString("clave") + "!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Conexion establecida Thalia" + rs.getString("clave") + "!", Toast.LENGTH_SHORT).show();
 
                 if ("USU01".compareTo(rs.getString("codigo")) == 0) {
                     usuario = rs.getString("logeo");
